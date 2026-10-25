@@ -1,0 +1,8 @@
+{
+  "totalWins": 5,
+  "games": {
+    "Tic-Tac-Toe": 2,
+    "Number Guessing": 1,
+    "Rock Paper Scissors": 2
+  }
+}

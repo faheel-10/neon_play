@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | NeonPlay</title>
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <main class="auth-card">
+    <a class="brand" href="/">NEON<span>PLAY</span></a>
+    <p class="eyebrow">JOIN THE GAME</p>
+    <h1>Create Account</h1>
+    <p class="subtitle">Create your account and start playing.</p>
+
+    <form id="signup-form">
+      <label for="signup-name">Full name</label>
+      <input id="signup-name" name="name" type="text"
+             placeholder="Your name" required minlength="2"
+             maxlength="50" autocomplete="name">
+
+      <label for="signup-email">Email address</label>
+      <input id="signup-email" name="email" type="email"
+             placeholder="you@example.com" required autocomplete="email">
+
+      <label for="signup-password">Password</label>
+      <input id="signup-password" name="password" type="password"
+             placeholder="At least 8 characters" required
+             minlength="8" maxlength="72" autocomplete="new-password">
+
+      <button type="submit">Create Account →</button>
+      <p id="auth-message" role="status"></p>
+    </form>
+
+    <p class="switch-page">
+      Already registered? <a href="/signin.html">Sign in</a>
+    </p>
+  </main>
+</body>
+</html>
